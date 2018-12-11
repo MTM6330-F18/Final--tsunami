@@ -1,0 +1,49 @@
+details {
+  max-width: 1200px;
+  margin: 20px;
+}
+
+summary {
+  position: relative;
+  background: #e1e1e1;
+  padding: 20px;
+  outline: none !important;
+}
+
+summary::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #222;
+  transition: width 0.5s ease;
+  transition-delay: 0.18s;
+}
+
+details[open] summary::after {
+  width: 100%;
+}
+
+details p {
+  margin: 20px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
