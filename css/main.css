@@ -6337,7 +6337,7 @@ nav {
 span,
 .collapse .navbar-nav a.nav-link:link,
 .collapse .navbar-nav a.nav-link:visited {
-  color: #085e2b; }
+  color: #0e7738; }
 
 .display-6 {
   background-color: #1f1f1f76;
@@ -6345,7 +6345,7 @@ span,
   padding-left: 3rem; }
 
 .active a {
-  color: #08ba4f; }
+  color: #00a42e; }
 
 .fa-book:hover,
 .fa-address-book:hover,
@@ -6360,22 +6360,36 @@ span,
   opacity: 1; }
 
 @media only screen and (max-width: 750px) {
+  span,
+  .collapse .navbar-nav a.nav-link:hover {
+    background-color: #1f1f1f76;
+    transition: background-color 1s ease;
+    transition: color 1s ease;
+    color: white; } }
+
+@media only screen and (min-width: 750px) {
+  span,
+  .collapse .navbar-nav a.nav-link:hover {
+    transition: color 1s ease;
+    color: red; } }
+
+@media only screen and (max-width: 750px) {
   .fa-book,
   .fa-address-book,
   .fa-dollar-sign {
-    font-size: 1.5rem;
+    font-size: 2.8rem;
     color: #fff;
     background: #3f3f3f;
-    padding: 0.5rem;
+    padding: 1rem;
     border-radius: 50%;
-    width: 3rem;
+    width: 5rem;
     height: auto;
-    margin-left: 2rem;
-    margin-right: 2rem; }
+    margin-left: 1.5rem;
+    margin-right: 1.5rem; }
   .fa-book:hover,
   .fa-address-book:hover,
   .fa-dollar-sign:hover {
-    font-size: 1.9rem;
+    font-size: 4rem;
     color: #08ba4f;
     transition: 0.5s; } }
 
@@ -6484,3 +6498,31 @@ footer {
   vertical-align: bottom;
   background-color: black;
   padding: 1rem; }
+
+footer .fa {
+  padding: 20px;
+  font-size: 25px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-left: 20px; }
+
+footer .fa:hover {
+  opacity: 0.7; }
+
+footer .fa-facebook {
+  background: #3b5998;
+  color: white; }
+
+footer .fa-twitter {
+  background: #55acee;
+  color: white; }
+
+footer .fa-google {
+  background: #dd4b39;
+  color: white; }
+
+.btn {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem; }
