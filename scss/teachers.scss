@@ -48,34 +48,43 @@ span,
 .active a {
   color: #08ba4f;
 }
+.fa-book:hover,
+.fa-address-book:hover,
+.fa-dollar-sign:hover {
+  font-size: 5.5rem;
+  color: #08ba4f;
+  transition: 0.5s;
+}
 .fa-book:hover:after,
 .fa-address-book:hover:after,
 .fa-dollar-sign:hover:after {
   opacity: 1;
 }
-
+// Mobile responsive nav
 @media only screen and (max-width: 750px) {
   .fa-book,
   .fa-address-book,
   .fa-dollar-sign {
-    font-size: 1.5rem;
+    font-size: 2.8rem;
     color: #fff;
     background: #3f3f3f;
-    padding: 0.5rem;
+    padding: 1rem;
     border-radius: 50%;
-    width: 3rem;
+    width: 5rem;
     height: auto;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
   .fa-book:hover,
   .fa-address-book:hover,
   .fa-dollar-sign:hover {
-    font-size: 1.9rem;
+    font-size: 4rem;
     color: #08ba4f;
     transition: 0.5s;
   }
 }
+
+// Desktop responsive nav
 @media only screen and (min-width: 750px) {
   .fa-book:hover,
   .fa-address-book:hover,
@@ -98,7 +107,6 @@ span,
     margin-right: 3rem;
   }
 }
-
 //Teachers page
 h2 {
   font-size: 40px;
@@ -175,4 +183,38 @@ footer {
   vertical-align: bottom;
   background-color: black;
   padding: 1rem;
+}
+// social media icons
+// code taken from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_social_media_buttons2
+footer .fa {
+  padding: 20px;
+  font-size: 25px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+footer .fa:hover {
+  opacity: 0.7;
+}
+footer .fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+footer .fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+footer .fa-google {
+  background: #dd4b39;
+  color: white;
+}
+// Back to top button
+.btn {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
