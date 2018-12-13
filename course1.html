@@ -1,187 +1,157 @@
 <!DOCTYPE html>
 <html lang="en-CA">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/min/main.css" />
-    <link rel="stylesheet" href="css/min/course.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
-    <title>MTM6330-F18 Final Project</title>
-  </head>
-  <nav class="navbar navbar-light fixed-top">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/min/main.css" />
+  <link rel="stylesheet" href="css/min/course.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous" />
+  <title>MTM6330-F18 Final Project</title>
+</head>
+<nav class="navbar navbar-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="./index.html">
+      <img src="../Final--tsunami/images/imd-logo.png" alt="Algonquin-College-Logo" />
+    </a>
+    <button class="navbar-toggler" , type="button" , data-toggle="collapse" , data-target="#navbarSupportedContent" ,
+      aria-controls="navbarSupportedContent" , aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="courses.html">Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="fees.html">Expenses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Overview</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="teachers.html">Faculty</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="faq.html">FAQ</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<body>
+  <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <a class="navbar-brand" href="./index.html">
-        <img
-          src="..//Final--tsunami/images/Algonquin-College-Logo.jpg"
-          alt="Algonquin-College-Logo"
-        />
-      </a>
-      <button
-        class="navbar-toggler"
-        ,
-        type="button"
-        ,
-        data-toggle="collapse"
-        ,
-        data-target="#navbarSupportedContent"
-        ,
-        aria-controls="navbarSupportedContent"
-        ,
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#courses">Courses</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#expenses">Expenses</a>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
-          <li class="nav-item">
-            <a class="nav-link" href="#faculty">Faculty</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./faq.html">FAQ</a>
-          </li>
-        </ul>
-      </div>
+      <h1 class="display-6">Interactive Media Design</h1>
     </div>
-  </nav>
-  <body>
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-6">Interactive Media Design</h1>
-      </div>
-      <a href="#"> <i class="fas fa-book round"></i> </a>
-      <a href="#"> <i class="fas fa-dollar-sign round"> </i> </a>
-      <a href="#"> <i class="fas fa-address-book round"> </i></a>
-    </div>
-    <!--
+    <a href="#"> <i class="fas fa-book round"></i> </a>
+    <a href="#"> <i class="fas fa-dollar-sign round"> </i> </a>
+    <a href="#"> <i class="fas fa-address-book round"> </i></a>
+  </div>
+  <!--
       https://www.w3schools.com/jsref/met_his_back.asp
       for the go back button
     -->
-    <button class="goBack" onclick="goBack()">Go Back</button>
-    <div class="course-page">
-      <script>
-        function goBack() {
-          window.history.back()
-        }
-      </script>
-      <h1 class="subtitle">Design Foundations</h1>
-      <p class="design_foundation">
-        In design foundations you will be covering the basic history of design.
-        The general principles of universal design, what happens in the design
-        process. The general categories of design that are covered within the
-        Interactive Media Design Program; you will also be learning about the
-        eight information architecture. We also cover the steps that go into
-        design and what design is, we also learn about the compositional
-        elements and principles of design. Those are the topics that we will be
-        covering in design foundations.
-      </p>
+  <button class="goBack" onclick="goBack()">Go Back</button>
+  <div class="course-page">
+    <script>
+      function goBack() {
+        window.history.back()
+      }
+    </script>
+    <h1 class="subtitle">Design Foundations</h1>
+    <p class="design_foundation">
+      In design foundations you will be covering the basic history of design.
+      The general principles of universal design, what happens in the design
+      process. The general categories of design that are covered within the
+      Interactive Media Design Program; you will also be learning about the
+      eight information architecture. We also cover the steps that go into
+      design and what design is, we also learn about the compositional
+      elements and principles of design. Those are the topics that we will be
+      covering in design foundations.
+    </p>
 
-      <h1 class="subtitle">Teacher</h1>
+    <h1 class="subtitle">Teacher</h1>
 
-      <img
-        class="teacher"
-        src="./images/katie.jpg"
-        alt="Katie-Professor-Profile"
-      />
-      <p class="name">Katie Tremblay</p>
+    <img class="teacher" src="./images/katie.jpg" alt="Katie-Professor-Profile" />
+    <p class="name">Katie Tremblay</p>
 
-      <h1 class="subtitle">Topic's</h1>
+    <h1 class="subtitle">Topic's</h1>
 
-      <ul class="list-text">
-        <li>
-          Apply design styles, theories, and principles to digital graphics and
-          layouts.
-        </li>
-        <li>
-          Use industry-standard software to create planning documents for
-          various types of designs and formats.
-        </li>
-        <li>
-          Explain the purpose and functionality of the main tools and panels in
-          industry-standard software.
-        </li>
-        <li>Explain the effect that colour can have on a digital design.</li>
-        <li>
-          Create digital documents that use and pair appropriate font families.
-        </li>
-        <li>
-          Use standard graphics software to design common web page layouts and
-          the contained elements such as navigation menus, headers, and footers.
-        </li>
-        <li>
-          Use industry-standard software to create digital document layouts
-          designed to be printed.
-        </li>
-      </ul>
+    <ul class="list-text">
+      <li>
+        Apply design styles, theories, and principles to digital graphics and
+        layouts.
+      </li>
+      <li>
+        Use industry-standard software to create planning documents for
+        various types of designs and formats.
+      </li>
+      <li>
+        Explain the purpose and functionality of the main tools and panels in
+        industry-standard software.
+      </li>
+      <li>Explain the effect that colour can have on a digital design.</li>
+      <li>
+        Create digital documents that use and pair appropriate font families.
+      </li>
+      <li>
+        Use standard graphics software to design common web page layouts and
+        the contained elements such as navigation menus, headers, and footers.
+      </li>
+      <li>
+        Use industry-standard software to create digital document layouts
+        designed to be printed.
+      </li>
+    </ul>
 
-      <h1 class="subtitle">Grading</h1>
-      <table class="grade-table">
-        <tr>
-          <th class="chart-top">Activites</th>
-          <th class="chart-top">Weight</th>
-        </tr>
-        <tr>
-          <td>Discussions</td>
-          <td>10%</td>
-        </tr>
-        <tr>
-          <td>Quizzes</td>
-          <td>10%</td>
-        </tr>
-        <tr>
-          <td>Exercises</td>
-          <td>20%</td>
-        </tr>
-        <tr>
-          <td>In-class exercises</td>
-          <td>25%</td>
-        </tr>
-        <tr>
-          <td>Project #1</td>
-          <td>10%</td>
-        </tr>
-        <tr>
-          <td>Project #2</td>
-          <td>15%</td>
-        </tr>
-        <tr>
-          <td>Final EXAM</td>
-          <td>10%</td>
-        </tr>
-      </table>
-    </div>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <h1 class="subtitle">Grading</h1>
+    <table class="grade-table">
+      <tr>
+        <th class="chart-top">Activites</th>
+        <th class="chart-top">Weight</th>
+      </tr>
+      <tr>
+        <td>Discussions</td>
+        <td>10%</td>
+      </tr>
+      <tr>
+        <td>Quizzes</td>
+        <td>10%</td>
+      </tr>
+      <tr>
+        <td>Exercises</td>
+        <td>20%</td>
+      </tr>
+      <tr>
+        <td>In-class exercises</td>
+        <td>25%</td>
+      </tr>
+      <tr>
+        <td>Project #1</td>
+        <td>10%</td>
+      </tr>
+      <tr>
+        <td>Project #2</td>
+        <td>15%</td>
+      </tr>
+      <tr>
+        <td>Final EXAM</td>
+        <td>10%</td>
+      </tr>
+    </table>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
