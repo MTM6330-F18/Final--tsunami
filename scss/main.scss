@@ -11,6 +11,7 @@
   background-repeat: no-repeat;
   height: 20rem;
 }
+
 // Load the main bootstrap framework.
 @import '../node_modules/bootstrap/scss/bootstrap';
 
@@ -33,6 +34,7 @@ nav {
   font-weight: 700;
   text-align: center;
 }
+
 span,
 .collapse .navbar-nav a.nav-link:link,
 .collapse .navbar-nav a.nav-link:visited {
@@ -45,9 +47,11 @@ span,
   margin-bottom: 30px;
   padding-left: 3rem;
 }
+
 .active a {
   color: #00a42e;
 }
+
 .fa-book:hover,
 .fa-address-book:hover,
 .fa-dollar-sign:hover {
@@ -55,13 +59,22 @@ span,
   color: #08ba4f;
   transition: 0.5s;
 }
+
 .fa-book:hover:after,
 .fa-address-book:hover:after,
 .fa-dollar-sign:hover:after {
   opacity: 1;
 }
+
+.carousel {
+  width: 50%;
+  height: 30%;
+  margin-left: 25%;
+}
+
 // Hover Mobile hamburger nav
 @media only screen and (max-width: 750px) {
+
   span,
   .collapse .navbar-nav a.nav-link:hover {
     background-color: #1f1f1f76;
@@ -70,16 +83,20 @@ span,
     color: white;
   }
 }
+
 // Hover Desktop hamburger nav
 @media only screen and (min-width: 750px) {
+
   span,
   .collapse .navbar-nav a.nav-link:hover {
     transition: color 1s ease;
     color: red;
   }
 }
+
 // Mobile responsive nav
 @media only screen and (max-width: 750px) {
+
   .fa-book,
   .fa-address-book,
   .fa-dollar-sign {
@@ -93,6 +110,7 @@ span,
     margin-left: 1.5rem;
     margin-right: 1.5rem;
   }
+
   .fa-book:hover,
   .fa-address-book:hover,
   .fa-dollar-sign:hover {
@@ -104,6 +122,7 @@ span,
 
 // Desktop responsive nav
 @media only screen and (min-width: 750px) {
+
   .fa-book:hover,
   .fa-address-book:hover,
   .fa-dollar-sign:hover {
@@ -111,6 +130,7 @@ span,
     color: #08ba4f;
     transition: 0.5s;
   }
+
   .fa-book,
   .fa-address-book,
   .fa-dollar-sign {
@@ -125,6 +145,7 @@ span,
     margin-right: 3rem;
   }
 }
+
 // Main page article
 h2 {
   font-size: 1rem;
@@ -140,6 +161,7 @@ p {
   padding: 75;
   font-size: 1rem;
 }
+
 .article-image {
   width: 100%;
   height: auto;
@@ -153,6 +175,7 @@ p {
     margin-right: 8rem;
     padding: 75;
   }
+
   h2 {
     margin: 8rem;
     margin-bottom: 1rem;
@@ -160,63 +183,78 @@ p {
     font-size: 1.5rem;
   }
 }
+
 @media screen and (min-width: 80rem) {
+
   // Vertical line
   .sidebar {
     float: left;
     margin-left: 2rem;
     border-left: 3px solid gray;
   }
+
   .secondary article {
     float: left;
     width: calc(50% - 1rem);
   }
+
   .secondary2 article {
     float: left;
     width: calc(50% - 1rem);
   }
+
   .clearfix::after {
     content: '';
     display: block;
     clear: both;
   }
+
   .secondary article:nth-child(1) p {
     margin-right: 0.5rem;
     margin-left: 40%;
   }
+
   .secondary article:nth-child(2) p {
     margin-left: 0.5rem;
     margin-right: 40%;
   }
+
   .secondary2 article:nth-child(1) p {
     margin-right: 0.5rem;
     margin-left: 40%;
   }
+
   .secondary2 article:nth-child(2) p {
     margin-left: 0.5rem;
     margin-right: 40%;
   }
+
   .secondary article:nth-child(1) h2 {
     margin-right: 0.5rem;
     margin-left: 40%;
   }
+
   .secondary article:nth-child(2) h2 {
     margin-left: 0.5rem;
     margin-right: 40%;
   }
+
   .secondary2 article:nth-child(1) h2 {
     margin-right: 0.5rem;
     margin-left: 40%;
   }
+
   .secondary2 article:nth-child(2) h2 {
     margin-left: 0.5rem;
     margin-right: 40%;
   }
+
   h2 {
     margin-left: 27%;
     margin-right: 27%;
     font-size: 1rem;
   }
+
   .article-image {
     width: 30rem;
     height: auto;
@@ -233,6 +271,7 @@ footer {
   background-color: black;
   padding: 1rem;
 }
+
 // social media icons
 // code taken from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_social_media_buttons2
 footer .fa {
@@ -248,6 +287,7 @@ footer .fa {
 footer .fa:hover {
   opacity: 0.7;
 }
+
 footer .fa-facebook {
   background: #3b5998;
   color: white;

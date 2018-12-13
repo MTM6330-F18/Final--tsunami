@@ -6359,6 +6359,11 @@ span,
 .fa-dollar-sign:hover:after {
   opacity: 1; }
 
+.carousel {
+  width: 50%;
+  height: 30%;
+  margin-left: 25%; }
+
 @media only screen and (max-width: 750px) {
   span,
   .collapse .navbar-nav a.nav-link:hover {
